@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>لنلعب لعبة حجرة، ورقة، مقص!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>قواعد اللعبة</summary>
+
+        <p>ستلعب ضد الكمبيوتر.</p>
+        <p>يمكنك الاختيار بين حجرة، وورقة، ومقص.</p>
+        <p>أول من يحصل على ثلاث نقاط يفوز.</p>
+
+        <p>وفيما يلي قواعد الحصول على نقطة في اللعبة:</p>
+        <ul>
+          <li>الحجرة يهزم المقص</li>
+          <li>المقص يغلب الورقة</li>
+          <li>الورق يغلب الحجرة</li>
+        </ul>
+        <p>
+          إذا اختار اللاعب والكمبيوتر نفس الخيار (على سبيل المثال ورقة و
+          ورقة)، فلن يحصل أي منهما على النقطة.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong>
+          Player Score: <span class="score" id="player-score">0</span>
+        </strong>
+        <strong>
+          Computer Score:
+          <span class="score" id="computer-score">0</span>
+        </strong>
+      </div>
+
+      <section class="options-container">
+        <h2>اختر أحد الخيارات:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">حجرة</button>
+          <button id="paper-btn" class="btn">ورقة</button>
+          <button id="scissors-btn" class="btn">مقص</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">العب مجدداً؟</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
