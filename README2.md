@@ -87,8 +87,9 @@ Clears all inputs and resets the UI.
 1️⃣ Clone the repo:
 
 
-git clone https://github.com/yourusername/calorie-counter.git
+git clone https://github.com/hariziwael/js-freecodecamp/blob/main/calorie%20counter/script.js
 cd calorie-counter
+
 2️⃣ Open index.html in your browser.
 
 📌 Next Steps
