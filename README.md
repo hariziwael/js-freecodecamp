@@ -20,38 +20,32 @@ Example usage:
 2️⃣ Determine the Winner
 Checks if the first choice wins against the second based on predefined rules.
 
-js
-Copy
-Edit
-function hasFirstChoiceWon(choice1, choice2, rules) {
-    return rules.some(rule => rule[0] === choice1 && rule[1] === choice2);
-}
+
+	function hasFirstChoiceWon(choice1, choice2, rules) {
+	    return rules.some(rule => rule[0] === choice1 && rule[1] === choice2);
+	}
 Example usage:
 
-js
-Copy
-Edit
-const rules = [["Rock", "Scissors"], ["Scissors", "Paper"], ["Paper", "Rock"]];
-console.log(hasFirstChoiceWon("Rock", "Scissors", rules)); // true
+
+	const rules = [["Rock", "Scissors"], ["Scissors", "Paper"], ["Paper", "Rock"]];
+	console.log(hasFirstChoiceWon("Rock", "Scissors", rules)); // true
 3️⃣ Get Round Results
 Updates scores and returns the result message.
 
-js
-Copy
-Edit
-function getRoundOutcome(playerChoice, options, rules, scores) {
+
+    function getRoundOutcome(playerChoice, options, rules, scores) {
     const computerChoice = getRandomChoice(options);
-    
-    if (hasFirstChoiceWon(playerChoice, computerChoice, rules)) {
-        scores.player++;
-        return `🎉 Player wins! ${playerChoice} beats ${computerChoice}`;
-    } else if (playerChoice === computerChoice) {
-        return `🤝 It's a tie! Both chose ${playerChoice}`;
-    } else {
-        scores.computer++;
-        return `💻 Computer wins! ${computerChoice} beats ${playerChoice}`;
-    }
-}
+	    
+	    if (hasFirstChoiceWon(playerChoice, computerChoice, rules)) {
+	        scores.player++;
+	        return `🎉 Player wins! ${playerChoice} beats ${computerChoice}`;
+	    } else if (playerChoice === computerChoice) {
+	        return `🤝 It's a tie! Both chose ${playerChoice}`;
+	    } else {
+	        scores.computer++;
+	        return `💻 Computer wins! ${computerChoice} beats ${playerChoice}`;
+	    }
+	}
 4️⃣ Update UI
 Updates the HTML elements dynamically.
 
@@ -88,7 +82,7 @@ Attaches event listeners for player choices.
 🎯 How to Play
 1️⃣ Clone this repository:
 
-git clone https://github.com/yourusername/rock-paper-scissors.git
+git clone https://github.com/hariziwael/js-freecodecamp/blob/main/Rock%20Paper%20Scissors/script.js
 cd rock-paper-scissors
 
 2️⃣ Open index.html in your browser.
